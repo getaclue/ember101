@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <th>
+      Description
+    </th>
+    <th>
+      Borrowed Since
+    </th>
+    <th>
+    </th>
+    <th>
+    </th>
+  </thead>
+  <tbody>
+    {{#each model as |loan|}}
+      <tr>
+        <td>
+          {{loan.article.name}}
+        </td>
+        <td>
+          {{loan.notes}}
+        </td>
+        <td>
+          {{loan.createdAt}}
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

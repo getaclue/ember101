@@ -1,0 +1,8 @@
+<form class="col-8 px2 mx-auto borrowers-form" {{action "save" on="submit"}}>
+  {{#if errorMessage}}
+    <h2 class="white bg-red p1">{{errorMessage}}</h2>
+  {{/if}}
+  {{input value=model.name placeholder="Article name" class="input fit"}}<br>
+  <button {{action "cancel"}} class="btn h3 border white bg-gray p2 mr2 col-3">Cancel</button>
+  <input type="submit" value="Save" class="btn h3 white bg-green border p2 mr2">
+</form>

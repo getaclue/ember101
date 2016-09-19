@@ -1,0 +1,29 @@
+<div class="col-8 px2 mx-auto p1 h2 center">
+  <div>
+    <img src="http://www.fillmurray.com/200/200" alt="Muray Image" />
+    <p>
+      {{model.firstName}}
+    </p>
+    <p>
+      {{model.lastName}}
+    </p>
+    <p>
+      {{model.email}}
+    </p>
+    <p>
+      {{model.twitter}}
+    </p>
+    <p>
+      {{link-to "Lend aticle" "loans.new"}}
+    </p>
+    <p>
+      {{link-to "Edit info" "friends.edit" model}}
+    </p>
+    <p>
+      <a href="#" {{action "delete" model}}>delete</a>
+    </p>
+  </div>
+  <div class="flex-auto ml1 loans-container">
+    {{outlet}}
+  </div>
+</div>
